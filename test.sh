@@ -30,7 +30,7 @@ PKG=$(go list -f '{{if .TestGoFiles}} {{.ImportPath}} {{end}}' ./...)
 go test $PKG
 
 # Browser tests are in a separate module, so do not show in $PKG.
-(cd browsertests && go test)
+(cd internal/browsertests && go test)
 
 for d in $PKG; do
   go test -race -coverprofile=profile.out -covermode=$MODE $d

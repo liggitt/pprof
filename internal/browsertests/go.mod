@@ -3,7 +3,7 @@ module github.com/google/pprof/browsertests
 go 1.19
 
 // Use the version of pprof in this directory tree.
-replace github.com/google/pprof => ../
+replace github.com/google/pprof => ../../
 
 require (
 	github.com/chromedp/chromedp v0.9.2

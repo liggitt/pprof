@@ -5,5 +5,5 @@ These tests can be run by executing the following in the top-level
 of the pprof directory:
 
 ```shell
-(cd browsertests && go test ./...)
+(cd internal/browsertests && go test ./...)
 ```

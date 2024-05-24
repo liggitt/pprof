@@ -54,7 +54,7 @@ To run the tests, do
 ```
 cd /tmp/pprof
 go test -v ./...
-(cd browsertests && go test)
+(cd internal/browsertests && go test)
 ```
 
 When you wish to work with your own fork of the source (which is required to be
@@ -70,7 +70,7 @@ git fetch aalexand
 git checkout -b my-new-feature
 # hack hack hack
 go test -v ./...
-(cd browsertests && go test)
+(cd internal/browsertests && go test)
 git commit -a -m "Add new feature."
 git push aalexand
 ```
